@@ -13,12 +13,11 @@ const ReactionSchema = new Schema(
         },
         username: {
             type: String,
-            required: 'this is required'
+            required: 'A username is required!'
         },
         createdAt: {
             type: Date,
             default: Date.now,
-            // need to import code to format date
         }
     },
     {
@@ -40,7 +39,7 @@ const ThoughtSchema = new Schema(
         },
         createdAt: {
             type: Date,
-            default: Date.now //needs date file
+            default: Date.now
         },
         username: {
             type: String,

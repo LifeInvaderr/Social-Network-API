@@ -1,7 +1,7 @@
-// const { Thought } = require('../models');
+const { Thought } = require('../models');
 
-// const thoughtController = {
-//     addThought
-// }
+const thoughtController = {
 
-// module.exports = thoughtController;
+}
+
+module.exports = thoughtController;
