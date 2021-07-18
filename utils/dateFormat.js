@@ -1,3 +1,5 @@
+// Format date taken from module to save time of formating
+
 const addDateSuffix = date => {
   let dateStr = date.toString();
 
