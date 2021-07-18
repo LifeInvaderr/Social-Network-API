@@ -54,11 +54,11 @@ const userController = {
             .catch(err => res.json(err))
     },
 
-    addFriend({ params, body }, res) {
-        console.log(params, body)
+    // wierd how it will only take the params to push to friend but not a body request
+    addFriend({ params }, res) {
         User.findOneAndUpdate(
-            { _id: params.friendId },
-            { $push: { friends: body } },
+            { _id: params.id },
+            { $push: { friends: params.friendId } },
             { new: true, runValidators: true }
         )
             .then(dbUserData => {
@@ -70,6 +70,22 @@ const userController = {
             })
             .catch(err => res.json(err))
     },
+
+    removeFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.id },
+            { $pull: { friends: params.friendId } },
+            { new: true, runValidators: true }
+        )
+            .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this id' })
+                    return;
+                }
+                res.json(dbUserData);
+
+            })
+    }
 
 };
 
