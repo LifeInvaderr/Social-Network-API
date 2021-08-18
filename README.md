@@ -1,5 +1,5 @@
 # Social Network API
-Url to this repository: https://github.com/LifeInvaderr/Book-Search-Engine
+Url to this repository: https://github.com/LifeInvaderr/Social-Network-API
 
 ![Social-Media-Network](/images/SocialMediaCapture.PNG)
 
