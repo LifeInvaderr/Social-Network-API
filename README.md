@@ -7,9 +7,14 @@ Url to this repository: https://github.com/LifeInvaderr/Social-Network-API
 With this social network API, users are able to create accounts, add friend, create 'thoughts' and add reactions to those thoughts
 
 ## Table of contents
+* [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Questions](#questions)
+
+## Technologies
+* MongoDB
+* Javascript - Express.js
 
 ## Installation
 To install this repository, please either clone or install the zip version.
